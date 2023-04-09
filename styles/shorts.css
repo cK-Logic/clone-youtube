@@ -1,0 +1,48 @@
+
+#shortsvid1 {
+  color: var(--text-color);
+  margin: 2rem auto;
+  font-size: 200%;
+  pointer-events: none;
+}
+
+.hr1 {
+  width: calc(100% - 25%);
+  margin: 0 auto;
+}
+
+.shortsvid {
+  color: var(--text-color);
+  margin: 0 auto 3rem;
+  width: calc(100% - 25%);
+  display: flex;
+  gap: .6rem;
+}
+
+.shortscontainer {
+  width: 171px;
+}
+
+.shortscontainer img {
+  width: 100%;
+  height: 304px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.shortscontainer img:hover {
+  opacity: .6;
+}
+
+.shortscontainer h3 {
+  margin: .5rem 0;
+}
+
+/* .shortsvid::before {
+  content: "";
+  height: 1rem;
+  width: 100%;
+  background: red;
+} */
+

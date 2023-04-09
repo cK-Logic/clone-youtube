@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header&sidebar.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <link rel="stylesheet" href="styles/thumnails.css">
+  <link rel="stylesheet" href="styles/shorts.css">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Youtube-Clone</title>
+
+</head>
+<a href=""></a>
+
+<body>
+                    
+  <header>
+    <div class="firstpart" id="head">
+      <i class='bx bx-menu' id="opensidebar"></i>
+        <i class='bx bxl-youtube' id="yticone" ></i>
+        <h2>YouTube</h2>
+    </div>
+
+    <!-- middle part of the heading -->
+    <div class="searchbar" id="searchbar">
+      <input class="barforsearch" type="search" placeholder="Search">
+
+      <span id="searchbutton">
+        <i class='bx bx-search' id="search"></i>
+        <span class="searchtext">Search</span>
+      </span>
+
+      <span id="searchwithvoice">
+        <i class='bx bxs-microphone' id="mic" ></i>
+        <span id="searchwith">Search with your voice</span>
+      </span>
+    </div>
+            
+
+    <!-- end part of the header -->
+    <div class="endpart" id="endpart">
+      <i class='bx bx-video-plus'></i>
+      <i class='bx bx-bell'><span id="nine">9+</span></i>
+      <img src="photos/profilepic.jpg" alt="" class="picforpopup">
+    </div>
+  </header>
+
+  <!-- sidebar -->
+  <div class="sidebarcontainer" id="sidebarcontainer">
+
+    <div id="icone5" class="homeicone">
+      <i class='bx bx-home'></i>
+      <span>Home</span>
+    </div>
+
+    <div id="icone5" class="shorts">
+      <i class='bx bxl-tiktok' ></i>
+      <span>Shorts</span>
+    </div>
+
+    <div id="icone5" class="subscriptions">
+      <i class='bx bx-captions' ></i>
+      <span>Subscriptions</span>
+    </div>
+
+    <div id="icone5" class="library">
+      <i class='bx bx-movie-play' ></i>
+      <span>Library</span>
+    </div>
+  </div>
+
+  <!-- ======================= pop up side bar ============================= -->
+
+  <div class="popupsidebar show_popupsidebar" id="popupsidebar">
+    <i class='bx bx-home' > <span id="texto">Home</span></i>
+    <i class='bx bxl-tiktok' > <span id="texto">Shorts</span></i>
+    <i class='bx bx-captions' > <span id="texto">Subscriptions</span></i>
+
+    <hr id="linearota" >
+
+    <i class='bx bx-movie-play' > <span id="texto">Library</span></i>
+    <i class='bx bx-history' > <span id="texto">History</span></i>
+    <i class='bx bx-play-circle'> <span id="texto">Your videos</span></i>
+    <i class='bx bx-time-five'> <span id="texto">Watch later</span></i>
+    <i class='bx bx-like' > <span id="texto">Liked videos</span></i>
+    <hr id="linearota">
+
+    <h6>Subscriptions</h6>
+
+    <div class="fotosdeperfil" title="This guy">
+      <img src="Photos/popupsidebarprofilepictures.jpg" alt="" >
+      <span id="textodeperfil">This guy</span>
+    </div>
+    <div class="fotosdeperfil" title="That other guy">
+      <img src="Photos/popupsidebarprofilepictures.jpg" alt="" >
+      <span id="textodeperfil">That other guy</span>
+    </div>
+    <div class="fotosdeperfil"  title="Your mom">
+      <img src="Photos/popupsidebarprofilepictures.jpg" alt="">
+      <span id="textodeperfil">Your mom</span>
+    </div>
+    <div class="fotosdeperfil" title="Your daddy">
+      <img src="Photos/popupsidebarprofilepictures.jpg" alt="" >
+      <span id="textodeperfil">Your daddy</span>
+    </div>
+    <div class="fotosdeperfil" title="Your gold fish">
+      <img src="Photos/popupsidebarprofilepictures.jpg" alt="" >
+      <span id="textodeperfil">Your gold fish</span>
+    </div>
+    <div class="fotosdeperfil"  title="Your mail man">
+      <img src="Photos/popupsidebarprofilepictures.jpg" alt="">
+      <span id="textodeperfil">Your mail man</span>
+    </div>
+    <div class="fotosdeperfil" title="Your dog">
+      <img src="Photos/popupsidebarprofilepictures.jpg" alt="" >
+      <span id="textodeperfil">Your dog</span>
+    </div>
+    <div class="fotosdeperfil" title="Greg the legend">
+      <img src="Photos/popupsidebarprofilepictures.jpg" alt="" >
+      <span id="textodeperfil">Greg the legend</span>
+    </div>
+
+    <div class="showmorebtn" id="showmorebtn">
+      <i class='bx bxs-chevron-down'><span>Show more</span></i>
+    </div>
+
+    <div class="showmorecontent .show_showmorecontent" id="showmorecontent">
+      <div class="fotosdeperfil" title="This guy">
+        <img src="Photos/popupsidebarprofilepictures.jpg" alt="" >
+        <span id="textodeperfil">This guy</span>
+      </div>
+      <div class="fotosdeperfil" title="That other guy">
+        <img src="Photos/popupsidebarprofilepictures.jpg" alt="" >
+        <span id="textodeperfil">That other guy</span>
+      </div>
+      <div class="fotosdeperfil"  title="Your mom">
+        <img src="Photos/popupsidebarprofilepictures.jpg" alt="">
+        <span id="textodeperfil">Your mom</span>
+      </div>
+      <div class="fotosdeperfil" title="Your daddy">
+        <img src="Photos/popupsidebarprofilepictures.jpg" alt="" >
+        <span id="textodeperfil">Your daddy</span>
+      </div>
+      <div class="fotosdeperfil" title="Your gold fish">
+        <img src="Photos/popupsidebarprofilepictures.jpg" alt="" >
+        <span id="textodeperfil">Your gold fish</span>
+      </div>
+      <div class="fotosdeperfil"  title="Your mail man">
+        <img src="Photos/popupsidebarprofilepictures.jpg" alt="">
+        <span id="textodeperfil">Your mail man</span>
+      </div>
+      <div class="fotosdeperfil" title="Your dog">
+        <img src="Photos/popupsidebarprofilepictures.jpg" alt="" >
+        <span id="textodeperfil">Your dog</span>
+      </div>
+      <div class="fotosdeperfil" title="Greg the legend">
+        <img src="Photos/popupsidebarprofilepictures.jpg" alt="" >
+        <span id="textodeperfil">Greg the legend</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- videos -->
+
+  <section class="firstcontainer">
+    <div class="containerdiv">
+      <div class="photocontainer">
+        <a href="onceyouclickonvideo.html"><img src="Photos/lala.webp" class="photodethum" alt=""></a>
+        <span class="videotimer">10:24</span>
+      </div>
+      <div class="videocontext">
+        <aside>
+          <img src="Photos/iframeprofilepic.jpg" class="photodeperfilparavideo" alt="">
+        </aside>
+        <h4>Karens Going Wild !!! Buy Tickets To See It In 4k </h4>
+        <h6>SSSniperWolf</h6>
+        <p>881k views • 10 hours ago</p>
+      </div>
+    </div>
+    <div class="containerdiv">
+      <div class="photocontainer">
+        <a href="onceyouclickonvideo.html"><img src="Photos/lala.webp" class="photodethum" alt=""></a>
+        <span class="videotimer">10:24</span>
+      </div>
+      <div class="videocontext">
+        <aside>
+          <img src="Photos/iframeprofilepic.jpg" class="photodeperfilparavideo" alt="">
+        </aside>
+        <h4>Karens Going Wild !!! Buy Tickets To See It In 4k </h4>
+        <h6>SSSniperWolf</h6>
+        <p>881k views • 10 hours ago</p>
+      </div>
+    </div>
+    <div class="containerdiv">
+      <div class="photocontainer">
+        <a href="onceyouclickonvideo.html"><img src="Photos/lala.webp" class="photodethum" alt=""></a>
+        <span class="videotimer">10:24</span>
+      </div>
+      <div class="videocontext">
+        <aside>
+          <img src="Photos/iframeprofilepic.jpg" class="photodeperfilparavideo" alt="">
+        </aside>
+        <h4>Karens Going Wild !!! Buy Tickets To See It In 4k </h4>
+        <h6>SSSniperWolf</h6>
+        <p>881k views • 10 hours ago</p>
+      </div>
+    </div>
+    <div class="containerdiv">
+      <div class="photocontainer">
+        <a href="onceyouclickonvideo.html"><img src="Photos/lala.webp" class="photodethum" alt=""></a>
+        <span class="videotimer">10:24</span>
+      </div>
+      <div class="videocontext">
+        <aside>
+          <img src="Photos/iframeprofilepic.jpg" class="photodeperfilparavideo" alt="">
+        </aside>
+        <h4>Karens Going Wild !!! Buy Tickets To See It In 4k </h4>
+        <h6>SSSniperWolf</h6>
+        <p>881k views • 10 hours ago</p>
+      </div>
+    </div>
+    <div class="containerdiv">
+      <div class="photocontainer">
+        <a href="onceyouclickonvideo.html"><img src="Photos/lala.webp" class="photodethum" alt=""></a>
+        <span class="videotimer">10:24</span>
+      </div>
+      <div class="videocontext">
+        <aside>
+          <img src="Photos/iframeprofilepic.jpg" class="photodeperfilparavideo" alt="">
+        </aside>
+        <h4>Karens Going Wild !!! Buy Tickets To See It In 4k </h4>
+        <h6>SSSniperWolf</h6>
+        <p>881k views • 10 hours ago</p>
+      </div>
+    </div>
+    <div class="containerdiv">
+      <div class="photocontainer">
+        <a href="onceyouclickonvideo.html"><img src="Photos/lala.webp" class="photodethum" alt=""></a>
+        <span class="videotimer">10:24</span>
+      </div>
+      <div class="videocontext">
+        <aside>
+          <img src="Photos/iframeprofilepic.jpg" class="photodeperfilparavideo" alt="">
+        </aside>
+        <h4>Karens Going Wild !!! Buy Tickets To See It In 4k </h4>
+        <h6>SSSniperWolf</h6>
+        <p>881k views • 10 hours ago</p>
+      </div>
+    </div>
+    <div class="containerdiv">
+      <div class="photocontainer">
+        <a href="onceyouclickonvideo.html"><img src="Photos/lala.webp" class="photodethum" alt=""></a>
+        <span class="videotimer">10:24</span>
+      </div>
+      <div class="videocontext">
+        <aside>
+          <img src="Photos/iframeprofilepic.jpg" class="photodeperfilparavideo" alt="">
+        </aside>
+        <h4>Karens Going Wild !!! Buy Tickets To See It In 4k </h4>
+        <h6>SSSniperWolf</h6>
+        <p>881k views • 10 hours ago</p>
+      </div>
+    </div>
+    <div class="containerdiv">
+      <div class="photocontainer">
+        <a href="onceyouclickonvideo.html"><img src="Photos/lala.webp" class="photodethum" alt=""></a>
+        <span class="videotimer">10:24</span>
+      </div>
+      <div class="videocontext">
+        <aside>
+          <img src="Photos/iframeprofilepic.jpg" class="photodeperfilparavideo" alt="">
+        </aside>
+        <h4>Karens Going Wild !!! Buy Tickets To See It In 4k </h4>
+        <h6>SSSniperWolf</h6>
+        <p>881k views • 10 hours ago</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="popupwhenyouclickprofilepic show_popupwhenyouclickprofilepic">
+    <div class="firstpartofthis">
+      <aside class="asidepopup"><img src="photos/profilepic.jpg" alt=""></aside>
+      <h5>Pepe</h5>
+      <h6>@pepe123</h6>
+      <p>Manage Your Google Account</p>
+    </div>
+    <br><hr><br>
+    <div class="secondpartofthis">
+      <i class='bx bx-user-circle'> Your Channel</i>
+      <i class='bx bx-desktop' > Youtube Studio</i>
+      <i class='bx bx-down-arrow-circle'> Switch Account</i>
+      <i class='bx bx-log-out-circle' > Sign Out</i>
+    </div>
+    <br><hr><br>
+    <div class="thirdpart">
+      <i class='bx bxs-credit-card'> Purchases and memberships</i>
+      <i class='bx bx-check-shield' > Your data in Youtube</i>
+    </div>
+    <br><hr><br>
+    <div class="fourtpart">
+      <i class='bx bx-moon' > Appearance: Device theme</i>
+      <i class='bx bx-message-rounded-dots'> Language: English</i>
+      <i class='bx bx-shield-x' > Restricted mode: Off</i>
+      <i class='bx bx-loader-circle'> Location: United States</i>
+      <i class='bx bx-text'> Keyboard shorcut</i>
+    </div>
+    <br><hr><br>
+    <div class="fifthpart">
+      <i class='bx bx-cog' > Setting</i>
+    </div>
+    <br><hr><br>
+    <div class="sixpart">
+      <i class='bx bx-help-circle' > Help</i>
+      <i class='bx bx-no-entry'> Send Feedback</i>
+    </div>
+  </div>
+  
+  <hr class="hr1">
+  <i class='bx bxl-tiktok' id="shortsvid1"> Shorts</i>
+
+  <section class="shortsvid">
+    
+    <div class="shortscontainer">
+      <img src="photos/shortspic.webp" alt="">
+      <h3>Pranks from the good old days</h3>
+      <p>771k views</p>
+    </div>
+    <div class="shortscontainer">
+      <img src="photos/shortspic.webp" alt="">
+      <h3>Pranks from the good old days</h3>
+      <p>771k views</p>
+    </div>
+    <div class="shortscontainer">
+      <img src="photos/shortspic.webp" alt="">
+      <h3>Pranks from the good old days</h3>
+      <p>771k views</p>
+    </div>
+    <div class="shortscontainer">
+      <img src="photos/shortspic.webp" alt="">
+      <h3>Pranks from the good old days</h3>
+      <p>771k views</p>
+    </div>
+    <div class="shortscontainer">
+      <img src="photos/shortspic.webp" alt="">
+      <h3>Pranks from the good old days</h3>
+      <p>771k views</p>
+    </div>
+    <div class="shortscontainer">
+      <img src="photos/shortspic.webp" alt="">
+      <h3>Pranks from the good old days</h3>
+      <p>771k views</p>
+    </div>
+    <div class="shortscontainer">
+      <img src="photos/shortspic.webp" alt="">
+      <h3>Pranks from the good old days</h3>
+      <p>771k views</p>
+    </div>
+    <div class="shortscontainer">
+      <img src="photos/shortspic.webp" alt="">
+      <h3>Pranks from the good old days</h3>
+      <p>771k views</p>
+    </div>
+  </section>
+  <hr class="hr1">
+
+
+  <section class="firstcontainer">
+    <div class="containerdiv">
+      <div class="photocontainer">
+        <a href="onceyouclickonvideo.html"><img src="Photos/lala.webp" class="photodethum" alt=""></a>
+        <span class="videotimer">10:24</span>
+      </div>
+      <div class="videocontext">
+        <aside>
+          <img src="photos/profilepic.jpg" class="photodeperfilparavideo" alt="">
+        </aside>
+        <h4>Karens Going Wild !!! Buy Tickets To See It In 4k </h4>
+        <h6>SSSniperWolf</h6>
+        <p>881k views • 10 hours ago</p>
+      </div>
+    </div>
+    <div class="containerdiv">
+      <div class="photocontainer">
+        <a href="onceyouclickonvideo.html"><img src="Photos/lala.webp" class="photodethum" alt=""></a>
+        <span class="videotimer">10:24</span>
+      </div>
+      <div class="videocontext">
+        <aside>
+          <img src="photos/profilepic.jpg" class="photodeperfilparavideo" alt="">
+        </aside>
+        <h4>Karens Going Wild !!! Buy Tickets To See It In 4k </h4>
+        <h6>SSSniperWolf</h6>
+        <p>881k views • 10 hours ago</p>
+      </div>
+    </div>
+    <div class="containerdiv">
+      <div class="photocontainer">
+        <a href="onceyouclickonvideo.html"><img src="Photos/lala.webp" class="photodethum" alt=""></a>
+        <span class="videotimer">10:24</span>
+      </div>
+      <div class="videocontext">
+        <aside>
+          <img src="photos/profilepic.jpg" class="photodeperfilparavideo" alt="">
+        </aside>
+        <h4>Karens Going Wild !!! Buy Tickets To See It In 4k </h4>
+        <h6>SSSniperWolf</h6>
+        <p>881k views • 10 hours ago</p>
+      </div>
+    </div>
+    <div class="containerdiv">
+      <div class="photocontainer">
+        <a href="onceyouclickonvideo.html"><img src="Photos/lala.webp" class="photodethum" alt=""></a>
+        <span class="videotimer">10:24</span>
+      </div>
+      <div class="videocontext">
+        <aside>
+          <img src="photos/profilepic.jpg" class="photodeperfilparavideo" alt="">
+        </aside>
+        <h4>Karens Going Wild !!! Buy Tickets To See It In 4k </h4>
+        <h6>SSSniperWolf</h6>
+        <p>881k views • 10 hours ago</p>
+      </div>
+    </div>
+    <div class="containerdiv">
+      <div class="photocontainer">
+        <a href="onceyouclickonvideo.html"><img src="Photos/lala.webp" class="photodethum" alt=""></a>
+        <span class="videotimer">10:24</span>
+      </div>
+      <div class="videocontext">
+        <aside>
+          <img src="photos/profilepic.jpg" class="photodeperfilparavideo" alt="">
+        </aside>
+        <h4>Karens Going Wild !!! Buy Tickets To See It In 4k </h4>
+        <h6>SSSniperWolf</h6>
+        <p>881k views • 10 hours ago</p>
+      </div>
+    </div>
+    <div class="containerdiv">
+      <div class="photocontainer">
+        <a href="onceyouclickonvideo.html"><img src="Photos/lala.webp" class="photodethum" alt=""></a>
+        <span class="videotimer">10:24</span>
+      </div>
+      <div class="videocontext">
+        <aside>
+          <img src="photos/profilepic.jpg" class="photodeperfilparavideo" alt="">
+        </aside>
+        <h4>Karens Going Wild !!! Buy Tickets To See It In 4k </h4>
+        <h6>SSSniperWolf</h6>
+        <p>881k views • 10 hours ago</p>
+      </div>
+    </div>
+    <div class="containerdiv">
+      <div class="photocontainer">
+        <a href="onceyouclickonvideo.html"><img src="Photos/lala.webp" class="photodethum" alt=""></a>
+        <span class="videotimer">10:24</span>
+      </div>
+      <div class="videocontext">
+        <aside>
+          <img src="photos/profilepic.jpg" class="photodeperfilparavideo" alt="">
+        </aside>
+        <h4>Karens Going Wild !!! Buy Tickets To See It In 4k </h4>
+        <h6>SSSniperWolf</h6>
+        <p>881k views • 10 hours ago</p>
+      </div>
+    </div>
+    <div class="containerdiv">
+      <div class="photocontainer">
+        <a href="onceyouclickonvideo.html"><img src="Photos/lala.webp" class="photodethum" alt=""></a>
+        <span class="videotimer">10:24</span>
+      </div>
+      <div class="videocontext">
+        <aside>
+          <img src="photos/profilepic.jpg" class="photodeperfilparavideo" alt="">
+        </aside>
+        <h4>Karens Going Wild !!! Buy Tickets To See It In 4k </h4>
+        <h6>SSSniperWolf</h6>
+        <p>881k views • 10 hours ago</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="functions.js"></script>
+</body>
+</html>

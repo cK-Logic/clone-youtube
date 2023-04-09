@@ -1,0 +1,231 @@
+#sidebarcontainer {
+  position: absolute;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  left: 0;
+  color: var(--text-color);
+  font-size: 60%;
+  row-gap: .5rem;
+  padding: 1rem .1rem;
+}
+
+
+#linearota {
+  margin: .5rem 0;
+  padding: 0 1rem;
+}
+
+#icone5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 23%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#icone5:nth-child(3) {
+  padding: 1rem .1rem;
+}
+
+#icone5:hover {
+  background: #303030;
+}
+
+
+.sidebarcontainer i {
+  font-size: 1.5rem;
+}
+
+
+/*pop up side bar*/
+
+
+.popupsidebar {
+  z-index: 1;
+  background: #0f0f0f;
+  margin-top: 3rem;
+  position: absolute;
+  position: fixed;
+  width: 16rem;
+  font-size: 1.2rem;
+  padding-left: .2rem;
+  padding-top: 1.3rem;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  transform: translateX(0);
+  transition: .3s ease;
+  overflow-y: auto;
+}
+
+
+.show_popupsidebar {
+  transform: translateX(-100%) !important;
+}
+
+.popupsidebar i {
+  padding: .5rem 1rem;
+  margin-right: .9rem;
+  border-radius: 10px;
+}
+
+.popupsidebar i:hover {
+  background: #505050;
+  cursor: pointer;
+  transition: .1s ease;
+}
+
+
+.popupsidebar span {
+  font-size: 70%;
+  margin-left: 1rem;
+}
+
+/* fotos */
+
+.popupsidebar img {
+  margin-top: .6rem;
+  margin-left: .8rem;
+  border-radius: 50%;
+  width: 1.3rem;
+  margin-bottom: .8rem;
+}
+
+.fotosdeperfil {
+  cursor: pointer;
+  margin: .1rem;
+  border-radius: 10px;
+  margin-right: .9rem;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+
+.fotosdeperfil:hover {
+  background: #505050;
+}
+
+.popupsidebar h6 {
+  margin: .5rem;
+  font-size: 80%;
+  pointer-events: none;
+}
+
+
+/* sidebar show more */
+
+.showmorebtn span{
+  margin-left: 2rem;
+  padding-right: 5.5rem;
+}
+
+
+.showmorecontent {
+  transform: translateY(-110%);
+  display: none;
+}
+
+.show_showmorecontent {
+transform: translateY(0%);
+display: grid;
+}
+
+
+
+
+
+/* pop up when you click on you profile pic  */
+
+
+
+.popupwhenyouclickprofilepic {
+  position: absolute;
+  position: fixed;
+  right: calc(0% + 18px);
+  top: calc(0% + 46px);
+  margin-left: 20rem;
+  background: #282828;
+  border-radius: 15px;
+  width: 300px;
+  color: var(--text-color);
+  z-index: 2;
+  display: block;
+}
+
+.show_popupwhenyouclickprofilepic {
+  display: none !important;
+}
+
+/* the where code didnt work for some reason */
+:where(h5, h6, p, i)> .popupwhenyouclickprofilepic{
+  cursor: pointer;
+}
+.popupwhenyouclickprofilepic h5,
+.popupwhenyouclickprofilepic h6,
+.popupwhenyouclickprofilepic p,
+.popupwhenyouclickprofilepic i,
+.popupwhenyouclickprofilepic img {
+  cursor: pointer;
+}
+
+.popupwhenyouclickprofilepic h5 {
+  font-size: 1.3rem;
+  margin: 0 0 .2rem;
+  padding-top: .8rem;
+}
+.popupwhenyouclickprofilepic h6 {
+  font-size: 1.1rem;
+}
+
+.popupwhenyouclickprofilepic p {
+  color: rgb(84, 142, 209);
+  margin-top: 1rem;
+  font-size: 90%;
+}
+
+
+.asidepopup {
+  height: 3.5rem;
+  margin: 1rem 1rem 0;
+  padding-bottom: 5rem;
+}
+
+.asidepopup img {
+  width: 3rem;
+  border-radius: 50%;
+  margin: 0rem;
+}
+
+.secondpartofthis,
+.thirdpart,
+.fourtpart,
+.fifthpart,
+.sixpart {
+  display: flex;
+  flex-direction: column;
+}
+
+.secondpartofthis i,
+.thirdpart i,
+.fourtpart i,
+.fifthpart i,
+.sixpart i {
+  padding: .5rem 1rem;
+}
+
+.sixpart {
+  margin-bottom: 1rem;
+}
+
+.popupwhenyouclickprofilepic i:hover {
+  background: #3e3e3e;
+}

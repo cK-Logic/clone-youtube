@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+  <link rel="stylesheet" href="styles_videoclick/general.css">
+  <link rel="stylesheet" href="styles/header&sidebar.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <link rel="stylesheet" href="styles/thumnails.css">
+  <link rel="stylesheet" href="styles/shorts.css">
+  <link rel="stylesheet" href="styles_videoclick/iframe.css">
+
+  <title>Play video</title>
+</head>
+<body>
+  
+  <header>
+    <div class="firstpart" id="head">
+      <i class='bx bx-menu' id="opensidebar"></i>
+      <i class='bx bxl-youtube' id="yticone" ></i>
+      <a href="index.html" class="ythome">
+        <h2>YouTube</h2>
+    </a>
+    </div>
+
+    <!-- middle part of the heading -->
+    <div class="searchbar" id="searchbar">
+      <input class="barforsearch" type="search" placeholder="Search">
+
+      <span id="searchbutton">
+        <i class='bx bx-search' id="search"></i>
+        <span class="searchtext">Search</span>
+      </span>
+
+      <span id="searchwithvoice">
+        <i class='bx bxs-microphone' id="mic" ></i>
+        <span id="searchwith">Search with your voice</span>
+      </span>
+    </div>
+            
+
+    <!-- end part of the header -->
+    <div class="endpart" id="endpart">
+      <i class='bx bx-video-plus'></i>
+      <i class='bx bx-bell'><span id="nine">9+</span></i>
+      <img src="photos/profilepic.jpg" alt="" class="picforpopup">
+    </div>
+  </header>
+
+  <!-- side pop up menu -->
+
+
+  <div class="popupsidebar show_popupsidebar" id="popupsidebar">
+    <i class='bx bx-home' > <span id="texto">Home</span></i>
+    <i class='bx bxl-tiktok' > <span id="texto">Shorts</span></i>
+    <i class='bx bx-captions' > <span id="texto">Subscriptions</span></i>
+
+    <hr id="linearota" >
+
+    <i class='bx bx-movie-play' > <span id="texto">Library</span></i>
+    <i class='bx bx-history' > <span id="texto">History</span></i>
+    <i class='bx bx-play-circle'> <span id="texto">Your videos</span></i>
+    <i class='bx bx-time-five'> <span id="texto">Watch later</span></i>
+    <i class='bx bx-like' > <span id="texto">Liked videos</span></i>
+    <hr id="linearota">
+
+    <h6>Subscriptions</h6>
+
+    <div class="fotosdeperfil" title="This guy">
+      <img src="Photos/popupsidebarprofilepictures.jpg" alt="" >
+      <span id="textodeperfil">This guy</span>
+    </div>
+    <div class="fotosdeperfil" title="That other guy">
+      <img src="Photos/popupsidebarprofilepictures.jpg" alt="" >
+      <span id="textodeperfil">That other guy</span>
+    </div>
+    <div class="fotosdeperfil"  title="Your mom">
+      <img src="Photos/popupsidebarprofilepictures.jpg" alt="">
+      <span id="textodeperfil">Your mom</span>
+    </div>
+    <div class="fotosdeperfil" title="Your daddy">
+      <img src="Photos/popupsidebarprofilepictures.jpg" alt="" >
+      <span id="textodeperfil">Your daddy</span>
+    </div>
+    <div class="fotosdeperfil" title="Your gold fish">
+      <img src="Photos/popupsidebarprofilepictures.jpg" alt="" >
+      <span id="textodeperfil">Your gold fish</span>
+    </div>
+    <div class="fotosdeperfil"  title="Your mail man">
+      <img src="Photos/popupsidebarprofilepictures.jpg" alt="">
+      <span id="textodeperfil">Your mail man</span>
+    </div>
+    <div class="fotosdeperfil" title="Your dog">
+      <img src="Photos/popupsidebarprofilepictures.jpg" alt="" >
+      <span id="textodeperfil">Your dog</span>
+    </div>
+    <div class="fotosdeperfil" title="Greg the legend">
+      <img src="Photos/popupsidebarprofilepictures.jpg" alt="" >
+      <span id="textodeperfil">Greg the legend</span>
+    </div>
+
+    <div class="showmorebtn" id="showmorebtn">
+      <i class='bx bxs-chevron-down'><span>Show more</span></i>
+    </div>
+
+    <div class="showmorecontent .show_showmorecontent" id="showmorecontent">
+      <div class="fotosdeperfil" title="This guy">
+        <img src="Photos/popupsidebarprofilepictures.jpg" alt="" >
+        <span id="textodeperfil">This guy</span>
+      </div>
+      <div class="fotosdeperfil" title="That other guy">
+        <img src="Photos/popupsidebarprofilepictures.jpg" alt="" >
+        <span id="textodeperfil">That other guy</span>
+      </div>
+      <div class="fotosdeperfil"  title="Your mom">
+        <img src="Photos/popupsidebarprofilepictures.jpg" alt="">
+        <span id="textodeperfil">Your mom</span>
+      </div>
+      <div class="fotosdeperfil" title="Your daddy">
+        <img src="Photos/popupsidebarprofilepictures.jpg" alt="" >
+        <span id="textodeperfil">Your daddy</span>
+      </div>
+      <div class="fotosdeperfil" title="Your gold fish">
+        <img src="Photos/popupsidebarprofilepictures.jpg" alt="" >
+        <span id="textodeperfil">Your gold fish</span>
+      </div>
+      <div class="fotosdeperfil"  title="Your mail man">
+        <img src="Photos/popupsidebarprofilepictures.jpg" alt="">
+        <span id="textodeperfil">Your mail man</span>
+      </div>
+      <div class="fotosdeperfil" title="Your dog">
+        <img src="Photos/popupsidebarprofilepictures.jpg" alt="" >
+        <span id="textodeperfil">Your dog</span>
+      </div>
+      <div class="fotosdeperfil" title="Greg the legend">
+        <img src="Photos/popupsidebarprofilepictures.jpg" alt="" >
+        <span id="textodeperfil">Greg the legend</span>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- drop dowm menu when click on profile pic -->
+    <div class="popupwhenyouclickprofilepic show_popupwhenyouclickprofilepic">
+      <div class="firstpartofthis">
+        <aside class="asidepopup"><img src="photos/profilepic.jpg" alt=""></aside>
+        <h4>Pepe</h4>
+        <h6>@pepe123</h6>
+        <p>Manage Your Google Account</p>
+      </div>
+      <br><hr><br>
+      <div class="secondpartofthis">
+        <i class='bx bx-user-circle'> Your Channel</i>
+        <i class='bx bx-desktop' > Youtube Studio</i>
+        <i class='bx bx-down-arrow-circle'> Switch Account</i>
+        <i class='bx bx-log-out-circle' > Sign Out</i>
+      </div>
+      <br><hr><br>
+      <div class="thirdpart">
+        <i class='bx bxs-credit-card'> Purchases and memberships</i>
+        <i class='bx bx-check-shield' > Your data in Youtube</i>
+      </div>
+      <br><hr><br>
+      <div class="fourtpart">
+        <i class='bx bx-moon' > Appearance: Device theme</i>
+        <i class='bx bx-message-rounded-dots'> Language: English</i>
+        <i class='bx bx-shield-x' > Restricted mode: Off</i>
+        <i class='bx bx-loader-circle'> Location: United States</i>
+        <i class='bx bx-text'> Keyboard shorcut</i>
+      </div>
+      <br><hr><br>
+      <div class="fifthpart">
+        <i class='bx bx-cog' > Setting</i>
+      </div>
+      <br><hr><br>
+      <div class="sixpart">
+        <i class='bx bx-help-circle' > Help</i>
+        <i class='bx bx-no-entry'> Send Feedback</i>
+      </div>
+    </div>
+
+    <div class="iframesection">
+
+      <div class="leftsideofiframe">
+        <iframe height=720 src="https://www.youtube.com/embed/yEvVyuNd9ZE?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+
+      <h3>Stellar - Grave (Official Lyric Video)</h3>
+
+
+        <!-- left side of the like section -->
+      <div class="iframelikesection">
+        <div class="iframelikeleft">
+          <img src="Photos/iframeprofilepic.jpg" alt="">
+          <div class="iframename">
+            <h4>STELLER</h4>
+            <p>1.62M subscribers</p>
+          </div>
+          <button>Subscribe</button>
+        </div>
+
+
+        <!-- right side of the like section -->
+        <div class="iframelikeright">
+          <div class="likes" style="display: flex;">
+            <i class='bx bx-like' id="like"></i> 
+            <p>122K</p>
+            <i class='bx bx-dislike' id="dislike"></i>
+          </div>
+          <div class="theis">
+            <i class='bx bx-share' > Share</i>
+            <i class='bx bxs-download' > Download</i>
+            <i class='bx bx-cut' > Clip</i>
+            <i class='bx bx-menu-alt-left' > Save</i>
+            <i class='bx bx-dots-horizontal-rounded' id="tresdots"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- video description section -->
+
+      <div class="iframedescription">
+        <div class="firstline" style="display: flex; color: var(--text-color); gap: 1rem; ">
+          <h4>1.1M views </h4>
+          <h4> 1 Month ago </h4>
+          <p style="margin-top: 0;">#Grave #Music #Stellar</p>
+        </div>
+        <p>Stream on all Platforms: </p>
+        <p>https://ffm.to/onmygrave</p>
+        <p class="iframeshowmore">Show more</p>
+      </div>
+
+      <div class="iframedescriptionshowmore">
+        <p>1,162,146 views  Premiered Feb 24, 2023  #Grave #Music #Stellar <br>
+          Stream on all Platforms: <br>
+          https://ffm.to/onmygrave <br>
+           <br>
+          Live fast, die young. <br>
+           <br>
+          Follow Stellar: <br>
+          https://www.instagram.com/rnbstellar/ <br>
+          https://twitter.com/rnbstellar <br>
+          <br>
+          Editor: <br>
+          https://www.instagram.com/rubyxlucas/ <br>
+          a.rubylucas@gmail.com <br>
+          https://rxl.myportfolio.com/ <br>
+          <br>
+          Lyrics <br> <br>
+          [Verse 1] <br>
+          Faded, And I really can’t escape it <br>
+          Cuz the feelin’ is elated  <br>
+          I wonder why I do this to myself <br>
+          Lately, I can’t help but feelin’ jaded <br>
+          So I end up getting wasted  <br>
+          Don’t really wanna be with no one else <br>
+          <br>
+          [Hook] <br>
+          I spend my days <br>
+          Dancin’ on my grave <br>
+          But it’s ok, there’s nothing left to save <br>
+          Cuz my heart is made of stone <br>
+          And I have nowhere left to go <br>
+          So I spend my days <br>
+          Dancin’ on my grave <br>
+          <br>
+          [Verse 2]<br>
+          I don’t know what you’ve been told <br>
+          But I’ve been young, and I’ve been bold <br>
+          And I think that I’m getting lost again <br>
+          Mind of steel, and heart of stone <br>
+          But I’ve been diggin’ up a hole <br>
+          And I think that I'm getting buried in <br>
+          <br>
+          [Hook] <br>
+          I spend my days <br>
+          Dancin’ on my grave <br>
+          But it’s ok, there’s nothing left to save <br>
+          Cuz my heart is made of stone
+          And I have nowhere left to go <br>
+          So I spend my days <br>
+          Dancin’ on my grave <br>
+          <br>
+          #Stellar #Grave #Music #Pop</p><br>
+        <p class="iframeshowless">Show less</p>
+      </div>
+
+
+      <div style="display: flex; width: 100%; color: var(--text-color); margin-top: 1rem; align-items: center; text-align: center;" >
+        <div style="margin-right: 3rem;">
+          <p>671 Comments </p>
+        </div>
+        <i class='bx bx-sort-down' style="font-size: 170%; margin-right: .5rem;"></i>
+        <p>Sort</p>
+      </div>
+      
+      <!-- add a comment -->
+      <div class="writecomment" style="display: flex; width: 100%;">
+        <img src="photos/profilepic.jpg" alt="">
+        <input type="text" placeholder="Add a comments...">
+      </div>
+
+      <!-- comment section -->
+
+      <div class="commentcontainer" style="display: flex; color: var(--text-color); margin-top: 2rem; width: 100%;">
+        <img src="photos/iframecomments.jpg" alt="">
+        <div class="rightsideofcomments" ">
+          <div style="display: flex; gap: 1rem;">
+            <h5>Martelico </h5>
+            <p style="font-size: 90%; color: gray; margin-bottom: .1rem;">1 Month ago</p>
+          </div>
+          <p>click on the show more</p>
+          <div class="commentlikeanddislie" style="display: flex; margin-top: .2rem;">
+            <i class='bx bx-like' style="font-size: 130%;"></i>
+            <p style="margin-left: .3rem; margin-right: .8rem; font-size: 80%; color: gray;">118</p>
+            <i class='bx bx-dislike' style="font-size: 130%;" ></i>
+            <p style="margin-left: 1rem;">Reply</p>
+          </div>
+        </div>
+      </div>
+      <div class="commentcontainer" style="display: flex; color: var(--text-color); margin-top: 2rem; width: 100%;">
+        <img src="photos/iframecomments.jpg" alt="">
+        <div class="rightsideofcomments" ">
+          <div style="display: flex; gap: 1rem;">
+            <h5>Martelico </h5>
+            <p style="font-size: 90%; color: gray; margin-bottom: .1rem;">1 Month ago</p>
+          </div>
+          <p>didnt know what else to type so...</p>
+          <div class="commentlikeanddislie" style="display: flex; margin-top: .2rem;">
+            <i class='bx bx-like' style="font-size: 130%;"></i>
+            <p style="margin-left: .3rem; margin-right: .8rem; font-size: 80%; color: gray;">118</p>
+            <i class='bx bx-dislike' style="font-size: 130%;" ></i>
+            <p style="margin-left: 1rem;">Reply</p>
+          </div>
+        </div>
+      </div>
+      <div class="commentcontainer" style="display: flex; color: var(--text-color); margin-top: 2rem; width: 100%;">
+        <img src="photos/iframecomments.jpg" alt="">
+        <div class="rightsideofcomments" ">
+          <div style="display: flex; gap: 1rem;">
+            <h5>Martelico </h5>
+            <p style="font-size: 90%; color: gray; margin-bottom: .1rem;">1 Month ago</p>
+          </div>
+          <p>Im sure this is going to be a hit</p>
+          <div class="commentlikeanddislie" style="display: flex; margin-top: .2rem;">
+            <i class='bx bx-like' style="font-size: 130%;"></i>
+            <p style="margin-left: .3rem; margin-right: .8rem; font-size: 80%; color: gray;">118</p>
+            <i class='bx bx-dislike' style="font-size: 130%;" ></i>
+            <p style="margin-left: 1rem;">Reply</p>
+          </div>
+        </div>
+      </div>
+      <div class="commentcontainer" style="display: flex; color: var(--text-color); margin-top: 2rem; width: 100%;">
+        <img src="photos/iframecomments.jpg" alt="">
+        <div class="rightsideofcomments" ">
+          <div style="display: flex; gap: 1rem;">
+            <h5>Martelico </h5>
+            <p style="font-size: 90%; color: gray; margin-bottom: .1rem;">1 Month ago</p>
+          </div>
+          <p>Im sure this is going to be a hit</p>
+          <div class="commentlikeanddislie" style="display: flex; margin-top: .2rem;">
+            <i class='bx bx-like' style="font-size: 130%;"></i>
+            <p style="margin-left: .3rem; margin-right: .8rem; font-size: 80%; color: gray;">118</p>
+            <i class='bx bx-dislike' style="font-size: 130%;" ></i>
+            <p style="margin-left: 1rem;">Reply</p>
+          </div>
+        </div>
+      </div>
+      <div class="commentcontainer" style="display: flex; color: var(--text-color); margin-top: 2rem; width: 100%;">
+        <img src="photos/iframecomments.jpg" alt="">
+        <div class="rightsideofcomments" ">
+          <div style="display: flex; gap: 1rem;">
+            <h5>Martelico </h5>
+            <p style="font-size: 90%; color: gray; margin-bottom: .1rem;">1 Month ago</p>
+          </div>
+          <p>Im sure this is going to be a hit</p>
+          <div class="commentlikeanddislie" style="display: flex; margin-top: .2rem;">
+            <i class='bx bx-like' style="font-size: 130%;"></i>
+            <p style="margin-left: .3rem; margin-right: .8rem; font-size: 80%; color: gray;">118</p>
+            <i class='bx bx-dislike' style="font-size: 130%;" ></i>
+            <p style="margin-left: 1rem;">Reply</p>
+          </div>
+        </div>
+      </div>
+      <div class="commentcontainer" style="display: flex; color: var(--text-color); margin-top: 2rem; width: 100%;">
+        <img src="photos/iframecomments.jpg" alt="">
+        <div class="rightsideofcomments" ">
+          <div style="display: flex; gap: 1rem;">
+            <h5>Martelico </h5>
+            <p style="font-size: 90%; color: gray; margin-bottom: .1rem;">1 Month ago</p>
+          </div>
+          <p>Im sure this is going to be a hit</p>
+          <div class="commentlikeanddislie" style="display: flex; margin-top: .2rem;">
+            <i class='bx bx-like' style="font-size: 130%;"></i>
+            <p style="margin-left: .3rem; margin-right: .8rem; font-size: 80%; color: gray;">118</p>
+            <i class='bx bx-dislike' style="font-size: 130%;" ></i>
+            <p style="margin-left: 1rem;">Reply</p>
+          </div>
+        </div>
+      </div>
+      <div class="commentcontainer" style="display: flex; color: var(--text-color); margin-top: 2rem; width: 100%;">
+        <img src="photos/iframecomments.jpg" alt="">
+        <div class="rightsideofcomments" ">
+          <div style="display: flex; gap: 1rem;">
+            <h5>Martelico </h5>
+            <p style="font-size: 90%; color: gray; margin-bottom: .1rem;">1 Month ago</p>
+          </div>
+          <p>Im sure this is going to be a hit</p>
+          <div class="commentlikeanddislie" style="display: flex; margin-top: .2rem;">
+            <i class='bx bx-like' style="font-size: 130%;"></i>
+            <p style="margin-left: .3rem; margin-right: .8rem; font-size: 80%; color: gray;">118</p>
+            <i class='bx bx-dislike' style="font-size: 130%;" ></i>
+            <p style="margin-left: 1rem;">Reply</p>
+          </div>
+        </div>
+      </div>
+      <div class="commentcontainer" style="display: flex; color: var(--text-color); margin-top: 2rem; width: 100%;">
+        <img src="photos/iframecomments.jpg" alt="">
+        <div class="rightsideofcomments" ">
+          <div style="display: flex; gap: 1rem;">
+            <h5>Martelico </h5>
+            <p style="font-size: 90%; color: gray; margin-bottom: .1rem;">1 Month ago</p>
+          </div>
+          <p>Im sure this is going to be a hit</p>
+          <div class="commentlikeanddislie" style="display: flex; margin-top: .2rem;">
+            <i class='bx bx-like' style="font-size: 130%;"></i>
+            <p style="margin-left: .3rem; margin-right: .8rem; font-size: 80%; color: gray;">118</p>
+            <i class='bx bx-dislike' style="font-size: 130%;" ></i>
+            <p style="margin-left: 1rem;">Reply</p>
+          </div>
+        </div>
+      </div>
+      <div class="commentcontainer" style="display: flex; color: var(--text-color); margin-top: 2rem; width: 100%;">
+        <img src="photos/iframecomments.jpg" alt="">
+        <div class="rightsideofcomments" ">
+          <div style="display: flex; gap: 1rem;">
+            <h5>Martelico </h5>
+            <p style="font-size: 90%; color: gray; margin-bottom: .1rem;">1 Month ago</p>
+          </div>
+          <p>Im sure this is going to be a hit</p>
+          <div class="commentlikeanddislie" style="display: flex; margin-top: .2rem;">
+            <i class='bx bx-like' style="font-size: 130%;"></i>
+            <p style="margin-left: .3rem; margin-right: .8rem; font-size: 80%; color: gray;">118</p>
+            <i class='bx bx-dislike' style="font-size: 130%;" ></i>
+            <p style="margin-left: 1rem;">Reply</p>
+          </div>
+        </div>
+      </div>
+      <div class="commentcontainer" style="display: flex; color: var(--text-color); margin-top: 2rem; width: 100%;">
+        <img src="photos/iframecomments.jpg" alt="">
+        <div class="rightsideofcomments" ">
+          <div style="display: flex; gap: 1rem;">
+            <h5>Martelico </h5>
+            <p style="font-size: 90%; color: gray; margin-bottom: .1rem;">1 Month ago</p>
+          </div>
+          <p>Im sure this is going to be a hit</p>
+          <div class="commentlikeanddislie" style="display: flex; margin-top: .2rem;">
+            <i class='bx bx-like' style="font-size: 130%;"></i>
+            <p style="margin-left: .3rem; margin-right: .8rem; font-size: 80%; color: gray;">118</p>
+            <i class='bx bx-dislike' style="font-size: 130%;" ></i>
+            <p style="margin-left: 1rem;">Reply</p>
+          </div>
+        </div>
+      </div>
+      <div class="commentcontainer" style="display: flex; color: var(--text-color); margin-top: 2rem; width: 100%;">
+        <img src="photos/iframecomments.jpg" alt="">
+        <div class="rightsideofcomments" ">
+          <div style="display: flex; gap: 1rem;">
+            <h5>Martelico </h5>
+            <p style="font-size: 90%; color: gray; margin-bottom: .1rem;">1 Month ago</p>
+          </div>
+          <p>Im sure this is going to be a hit</p>
+          <div class="commentlikeanddislie" style="display: flex; margin-top: .2rem;">
+            <i class='bx bx-like' style="font-size: 130%;"></i>
+            <p style="margin-left: .3rem; margin-right: .8rem; font-size: 80%; color: gray;">118</p>
+            <i class='bx bx-dislike' style="font-size: 130%;" ></i>
+            <p style="margin-left: 1rem;">Reply</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div>
+      <div class="iframethumvideos">
+        <img src="Photos/iframethum.webp" alt="">
+        <div class="iframeuseless">
+          <h4> Karens in the wild!!!</h4>
+          <p>Demitres the 3rd</p>
+          <p> 2k views • 1 month ago</p>
+        </div>
+      </div>
+
+      <div class="iframethumvideos2">
+        <img src="Photos/iframethum.webp" alt="">
+        <div class="iframeuseless">
+          <h4> Karens in the wild!!!</h4>
+          <p>Demitres the 3rd</p>
+          <p> 2k views • 1 month ago</p>
+        </div>
+      </div>
+      <div class="iframethumvideos2">
+        <img src="Photos/iframethum.webp" alt="">
+        <div class="iframeuseless">
+          <h4> Karens in the wild!!!</h4>
+          <p>Demitres the 3rd</p>
+          <p> 2k views • 1 month ago</p>
+        </div>
+      </div>
+      <div class="iframethumvideos2">
+        <img src="Photos/iframethum.webp" alt="">
+        <div class="iframeuseless">
+          <h4> Karens in the wild!!!</h4>
+          <p>Demitres the 3rd</p>
+          <p> 2k views • 1 month ago</p>
+        </div>
+      </div>
+      <div class="iframethumvideos2">
+        <img src="Photos/iframethum.webp" alt="">
+        <div class="iframeuseless">
+          <h4> Karens in the wild!!!</h4>
+          <p>Demitres the 3rd</p>
+          <p> 2k views • 1 month ago</p>
+        </div>
+      </div>
+      <div class="iframethumvideos2">
+        <img src="Photos/iframethum.webp" alt="">
+        <div class="iframeuseless">
+          <h4> Karens in the wild!!!</h4>
+          <p>Demitres the 3rd</p>
+          <p> 2k views • 1 month ago</p>
+        </div>
+      </div>
+      <div class="iframethumvideos2">
+        <img src="Photos/iframethum.webp" alt="">
+        <div class="iframeuseless">
+          <h4> Karens in the wild!!!</h4>
+          <p>Demitres the 3rd</p>
+          <p> 2k views • 1 month ago</p>
+        </div>
+      </div>
+      <div class="iframethumvideos2">
+        <img src="Photos/iframethum.webp" alt="">
+        <div class="iframeuseless">
+          <h4> Karens in the wild!!!</h4>
+          <p>Demitres the 3rd</p>
+          <p> 2k views • 1 month ago</p>
+        </div>
+      </div>
+      <div class="iframethumvideos2">
+        <img src="Photos/iframethum.webp" alt="">
+        <div class="iframeuseless">
+          <h4> Karens in the wild!!!</h4>
+          <p>Demitres the 3rd</p>
+          <p> 2k views • 1 month ago</p>
+        </div>
+      </div>
+      <div class="iframethumvideos2">
+        <img src="Photos/iframethum.webp" alt="">
+        <div class="iframeuseless">
+          <h4> Karens in the wild!!!</h4>
+          <p>Demitres the 3rd</p>
+          <p> 2k views • 1 month ago</p>
+        </div>
+      </div>
+      <div class="iframethumvideos2">
+        <img src="Photos/iframethum.webp" alt="">
+        <div class="iframeuseless">
+          <h4> Karens in the wild!!!</h4>
+          <p>Demitres the 3rd</p>
+          <p> 2k views • 1 month ago</p>
+        </div>
+      </div>
+      <div class="iframethumvideos2">
+        <img src="Photos/iframethum.webp" alt="">
+        <div class="iframeuseless">
+          <h4> Karens in the wild!!!</h4>
+          <p>Demitres the 3rd</p>
+          <p> 2k views • 1 month ago</p>
+        </div>
+      </div>
+      <div class="iframethumvideos2">
+        <img src="Photos/iframethum.webp" alt="">
+        <div class="iframeuseless">
+          <h4> Karens in the wild!!!</h4>
+          <p>Demitres the 3rd</p>
+          <p> 2k views • 1 month ago</p>
+        </div>
+      </div>
+      <div class="iframethumvideos2">
+        <img src="Photos/iframethum.webp" alt="">
+        <div class="iframeuseless">
+          <h4> Karens in the wild!!!</h4>
+          <p>Demitres the 3rd</p>
+          <p> 2k views • 1 month ago</p>
+        </div>
+      </div>
+      <div class="iframethumvideos2">
+        <img src="Photos/iframethum.webp" alt="">
+        <div class="iframeuseless">
+          <h4> Karens in the wild!!!</h4>
+          <p>Demitres the 3rd</p>
+          <p> 2k views • 1 month ago</p>
+        </div>
+      </div>
+      <div class="iframethumvideos2">
+        <img src="Photos/iframethum.webp" alt="">
+        <div class="iframeuseless">
+          <h4> Karens in the wild!!!</h4>
+          <p>Demitres the 3rd</p>
+          <p> 2k views • 1 month ago</p>
+        </div>
+      </div>
+      <div class="iframethumvideos2">
+        <img src="Photos/iframethum.webp" alt="">
+        <div class="iframeuseless">
+          <h4> Karens in the wild!!!</h4>
+          <p>Demitres the 3rd</p>
+          <p> 2k views • 1 month ago</p>
+        </div>
+      </div>
+      <div class="iframethumvideos2">
+        <img src="Photos/iframethum.webp" alt="">
+        <div class="iframeuseless">
+          <h4> Karens in the wild!!!</h4>
+          <p>Demitres the 3rd</p>
+          <p> 2k views • 1 month ago</p>
+        </div>
+      </div>
+      <div class="iframethumvideos2">
+        <img src="Photos/iframethum.webp" alt="">
+        <div class="iframeuseless">
+          <h4> Karens in the wild!!!</h4>
+          <p>Demitres the 3rd</p>
+          <p> 2k views • 1 month ago</p>
+        </div>
+      </div>
+      <div class="iframethumvideos2">
+        <img src="Photos/iframethum.webp" alt="">
+        <div class="iframeuseless">
+          <h4> Karens in the wild!!!</h4>
+          <p>Demitres the 3rd</p>
+          <p> 2k views • 1 month ago</p>
+        </div>
+      </div>
+      <div class="iframethumvideos2">
+        <img src="Photos/iframethum.webp" alt="">
+        <div class="iframeuseless">
+          <h4> Karens in the wild!!!</h4>
+          <p>Demitres the 3rd</p>
+          <p> 2k views • 1 month ago</p>
+        </div>
+      </div>
+      <div class="iframethumvideos2">
+        <img src="Photos/iframethum.webp" alt="">
+        <div class="iframeuseless">
+          <h4> Karens in the wild!!!</h4>
+          <p>Demitres the 3rd</p>
+          <p> 2k views • 1 month ago</p>
+        </div>
+      </div>
+      <div class="iframethumvideos2">
+        <img src="Photos/iframethum.webp" alt="">
+        <div class="iframeuseless">
+          <h4> Karens in the wild!!!</h4>
+          <p>Demitres the 3rd</p>
+          <p> 2k views • 1 month ago</p>
+        </div>
+      </div>
+      <div class="iframethumvideos2">
+        <img src="Photos/iframethum.webp" alt="">
+        <div class="iframeuseless">
+          <h4> Karens in the wild!!!</h4>
+          <p>Demitres the 3rd</p>
+          <p> 2k views • 1 month ago</p>
+        </div>
+      </div>
+
+    </div>
+  <script src="functions.js" ></script>
+</body>
+</html>
